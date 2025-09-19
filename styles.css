@@ -1,40 +1,36 @@
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Evolventa', sans-serif;
-  background-color: #ffffff; /* оставляем как было (фон сайта) */
-  color: #0B1A2E; /* основной текст */
-}
-
-.hero {
-  background-color: #0B1A2E; /* фон героя остаётся */
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.hero h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 3rem;
-  color: #F4F7FA; /* цвет заголовка */
-  text-shadow: 0 0 20px rgba(244, 247, 250, 0.3),
-               0 0 40px rgba(244, 247, 250, 0.2); /* свечение 20-30% */
-  margin-bottom: 20px;
-}
-
-.hero .subtitle {
-  font-size: 1.2rem;
+  font-family: Evolventa, sans-serif;
+  background: #0B1A2E;
   color: #F4F7FA;
 }
 
-h2 {
-  font-family: 'Roboto', sans-serif;
-  color: #F4F7FA; /* заголовки тоже светлые */
-  background-color: #0B1A2E;
-  padding: 10px;
-  display: inline-block;
+header {
+  padding: 2rem;
+  text-align: center;
+  background: #0B1A2E;
 }
 
-p {
-  font-family: 'Evolventa', sans-serif;
-  color: #0B1A2E;
+h1.glow {
+  font-family: Roboto, sans-serif;
+  font-size: 2.5rem;
+  color: #F4F7FA;
+  text-shadow: 0 0 10px rgba(244,247,250,0.3),
+               0 0 20px rgba(244,247,250,0.2);
+}
+
+main {
+  padding: 2rem;
+}
+
+h2 {
+  font-family: Roboto, sans-serif;
+  color: #F4F7FA;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background: #122545;
+  color: #C9CDD3;
 }
