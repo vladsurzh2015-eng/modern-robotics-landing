@@ -1,55 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DeloraTech — автономные роботы</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Roboto (заголовки) + Evolventa (текст) -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600;700;800&family=Evolventa:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeloraTech Robotics</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Evolventa&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <div class="brand">DeloraTech</div>
-      <nav class="menu">
-        <a href="#solutions">Решения</a>
-        <a href="#contact">Контакты</a>
-      </nav>
-    </div>
+  <header class="hero">
+    <h1 class="glow">Автономные роботы<br>для клининга и сервиса</h1>
+    <p class="subtitle">Инновационные технологии будущего уже сегодня</p>
   </header>
 
-  <!-- HERO (тёмный фон, светлый заголовок с подсветкой) -->
-  <section class="hero">
-    <div class="container">
-      <h1 class="glow">Автономные роботы<br/>для клининга и сервиса</h1>
-      <p class="lead">Инновационные технологии будущего уже сегодня</p>
-      <div class="cta">
-        <a href="#contact" class="btn">Оставить заявку</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Светлый блок с тёмным текстом -->
-  <main class="content">
-    <section id="solutions" class="section">
-      <div class="container">
-        <h2>Наши решения</h2>
-        <p>Мы предлагаем передовые роботизированные системы, которые помогают бизнесу
-           автоматизировать клининговые и сервисные процессы. Интеграции с лифтами и
-           системами доступа, карты помещений, расписания и отчёты — всё под контролем.</p>
-      </div>
+  <main>
+    <section>
+      <h2>Наши решения</h2>
+      <p>Мы предлагаем передовые роботизированные системы, которые помогают бизнесу автоматизировать клининг и сервисные процессы.</p>
+    </section>
+    <section>
+      <h2>О компании</h2>
+      <p>DeloraTech — более 10 лет опыта в B2B, сейчас мы расширяемся в сферу роботизированных решений.</p>
+    </section>
+    <section>
+      <h2>Контакты</h2>
+      <p>Email: info@deloratech.ru</p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">© <span id="year"></span> DeloraTech</div>
+  <footer>
+    <p>© 2025 DeloraTech. Все права защищены.</p>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
