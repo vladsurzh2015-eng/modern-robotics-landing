@@ -1,186 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Modern Robotics — автономные роботы</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeloraTech</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Evolventa&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="nav">
-  <div class="container nav-inner">
-    <div class="brand">
-      <div class="logo"></div>
-      <span>Modern Robotics</span>
-    </div>
-    <nav class="menu">
-      <a href="#features">Возможности</a>
-      <a href="#products">Роботы</a>
-      <a href="#tech">Технологии</a>
-      <a href="#contact">Контакты</a>
-    </nav>
-    <a class="btn primary" href="#contact">Связаться</a>
-  </div>
-</header>
+  <header class="hero">
+    <h1>Автономные роботы<br>для клининга и сервиса</h1>
+    <p class="subtitle">Инновационные технологии будущего уже сегодня</p>
+  </header>
 
-<section class="hero">
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
-  <div class="container hero-inner">
-    <div class="badge">Инновационные роботизированные решения</div>
-    <h1>Автономные роботы<br/>для клининга и сервиса</h1>
-    <p>Дистрибуция, интеграция и сервис. Сервисный центр в Нижнем Новгороде, расширение в Москву и Санкт‑Петербург. Премиальный сервис и быстрая окупаемость.</p>
-    <div class="cta">
-      <a class="btn primary" href="#contact">Рассчитать окупаемость →</a>
-      <a class="btn ghost" href="#products">Каталог роботов</a>
-    </div>
-
-    <div class="media">
-      <!-- Видео/изображение демо; можно заменить на реальное видео -->
-      <div class="media-box">
-        <div class="cpu-icon">⚙️</div>
-      </div>
-      <div class="media-caption">Демо-визуализация робота / сюда можно поставить видео</div>
-    </div>
-  </div>
-</section>
-
-<section id="features" class="section">
-  <div class="container">
-    <div class="section-head">
-      <div class="kicker">Почему мы</div>
-      <h2>Технологии, сервис и безопасность</h2>
-      <p class="sub">Мы поставляем, интегрируем и обслуживаем роботов. Прозрачные расчёты окупаемости и гарантийная поддержка.</p>
-    </div>
-    <div class="grid three">
-      <div class="card">
-        <div class="icon">⚡</div>
-        <h3>Быстрый старт</h3>
-        <p>Пилот за 7–14 дней. Настройка под объект, обучение персонала, старт без сложностей.</p>
-      </div>
-      <div class="card">
-        <div class="icon">🛡️</div>
-        <h3>Надёжность</h3>
-        <p>Сервисный центр в Нижнем Новгороде, расширение в Москву и Санкт‑Петербург. Запчасти и регламент ТО.</p>
-      </div>
-      <div class="card">
-        <div class="icon">🧠</div>
-        <h3>Интеграции</h3>
-        <p>Лифты, турникеты, двери. Навигация, карты, зоны, расписания — всё под контролем.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="products" class="section">
-  <div class="container">
-    <div class="section-head">
-      <div class="kicker">Каталог</div>
-      <h2>Роботы под разные сценарии</h2>
-      <p class="sub">ТЦ, склады, бизнес‑центры, ритейл, медицина, образование.</p>
-    </div>
-    <div class="grid three">
-      <div class="card">
-        <h3>CC1 / CC1 Pro</h3>
-        <ul class="list">
-          <li>Производительность до 1800–3000 м²/ч</li>
-          <li>Автодок‑станция: долив, слив, зарядка</li>
-          <li>Интеграция с лифтами и дверями</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>MT1‑VAC</h3>
-        <ul class="list">
-          <li>Сухая уборка, проход под мебелью</li>
-          <li>6–8 часов работы от зарядки</li>
-          <li>Ширина прохода от 60 см</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>MT1‑MAX</h3>
-        <ul class="list">
-          <li>До 10 000–12 000 м²/сутки</li>
-          <li>LIDAR‑навигация, расширенные датчики</li>
-          <li>Интеграция с BMS/SCADA</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="tech" class="section">
-  <div class="container">
-    <div class="section-head">
-      <div class="kicker">Технологии</div>
-      <h2>Безопасная навигация и умные сценарии</h2>
-      <p class="sub">Широкий угол обзора RGB‑D, лидары, защитные зоны, расписания и отчёты о качестве уборки.</p>
-    </div>
-    <div class="grid three">
-      <div class="card">
-        <h3>Навигация</h3>
-        <ul class="list">
-          <li>LIDAR + RGB‑D, построение карт</li>
-          <li>Обход препятствий и защита от столкновений</li>
-          <li>Точные зоны и маршруты</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Интеграции</h3>
-        <ul class="list">
-          <li>Лифты, турникеты, двери</li>
-          <li>BMS/SCADA, уведомления и отчёты</li>
-          <li>API для задач и расписаний</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Сервис</h3>
-        <ul class="list">
-          <li>Обучение персонала и регламенты</li>
-          <li>ТО, расходники, быстрые ремонты</li>
-          <li>SLA и удалённая поддержка</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="section">
-  <div class="container">
-    <div class="section-head">
-      <div class="kicker">Связаться</div>
-      <h2>Запрос демо и расчёт окупаемости</h2>
-      <p class="sub">Оставьте контакты — подберём модель под ваш объект и пришлём расчёт.</p>
-    </div>
-    <form class="form" onsubmit="event.preventDefault(); alert('Заявка отправлена. Мы свяжемся с вами.');">
-      <input type="text" placeholder="Имя" required />
-      <input type="tel" placeholder="Телефон" required />
-      <input type="email" placeholder="Email" />
-      <textarea placeholder="Кратко опишите объект (площадь, покрытие, график)"></textarea>
-      <button class="btn primary" type="submit">Отправить заявку</button>
-    </form>
-    <p class="policy">Нажимая «Отправить», вы соглашаетесь с обработкой персональных данных.</p>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container footer-inner">
-    <div class="brand small">
-      <div class="logo small"></div>
-      <span>© <span id="year"></span> Modern Robotics</span>
-    </div>
-    <div class="links">
-      <a href="#">Политика конфиденциальности</a>
-      <a href="#">Договор оферты</a>
-      <a href="#contact">Контакты</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <main>
+    <section>
+      <h2>Наши решения</h2>
+      <p>Мы предлагаем передовые роботизированные системы, которые помогают бизнесу автоматизировать клининг и сервисные процессы.</p>
+    </section>
+  </main>
 </body>
 </html>
