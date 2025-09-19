@@ -2,146 +2,161 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DeloraTech — автономные роботы</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/evolventa" rel="stylesheet">
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600;700;900&family=Evolventa:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Автономные роботы для клининга и сервиса. Дистрибуция, интеграция и сервис. Быстрый пилот и окупаемость." />
+  <meta name="description" content="DeloraTech — автономные роботы для клининга и сервиса: поставка, интеграции, сервис. Пилот 7–14 дней, окупаемость, поддержка." />
 </head>
 <body>
-  <!-- NAV -->
-  <header class="nav">
-    <div class="container nav__row">
-      <div class="brand">
-        <div class="brand__logo"></div>
-        <div class="brand__name">DeloraTech</div>
-      </div>
+  <!-- Навбар -->
+  <header class="topbar">
+    <div class="container topbar__row">
+      <a href="#" class="brand">
+        <span class="brand__logo"></span>
+        <span class="brand__name">DeloraTech</span>
+      </a>
       <nav class="menu">
-        <a href="#features">Возможности</a>
-        <a href="#products">Роботы</a>
-        <a href="#tech">Технологии</a>
+        <a href="#models">Модели</a>
+        <a href="#features">Преимущества</a>
+        <a href="#industries">Отрасли</a>
         <a href="#contact">Контакты</a>
       </nav>
+      <a class="btn btn--primary topbar__cta" href="#contact">Оставить заявку</a>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container">
-      <div class="kicker">Инновационные роботизированные решения</div>
-      <h1 class="hero__title glow">Автономные роботы для клининга и сервиса</h1>
-      <p class="hero__lead">Дистрибуция, интеграция и сервис. Сервисный центр в Нижнем Новгороде, расширение в Москву и Санкт‑Петербург. Пилот 7–14 дней и быстрая окупаемость.</p>
-      <div class="hero__cta">
-        <a class="btn btn--primary" href="#contact">Оставить заявку</a>
-        <a class="btn btn--ghost" href="#products">Каталог роботов</a>
+    <div class="container hero__grid">
+      <div>
+        <div class="kicker">Инновационные роботизированные решения</div>
+        <h1 class="hero__title glow">Автономные роботы для клининга и сервиса</h1>
+        <p class="hero__lead">Поставка, интеграция и сервис. Сервисный центр в Нижнем Новгороде, расширение в Москву и Санкт‑Петербург. Пилот 7–14 дней и прозрачная окупаемость.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="#models">Каталог роботов</a>
+          <a class="btn btn--ghost" href="#contact">Запросить демо</a>
+        </div>
+      </div>
+      <div class="hero__panel">
+        <div class="hero__media">Видео/изображение модели</div>
+        <div class="hero__note">Сюда можно вставить видео или визуализацию робота</div>
       </div>
     </div>
     <div class="hero__bg hero__bg--left"></div>
     <div class="hero__bg hero__bg--right"></div>
   </section>
 
-  <!-- FEATURES -->
+  <!-- Преимущества -->
   <section id="features" class="section">
     <div class="container">
-      <h2 class="section__title">Технологии, сервис и безопасность</h2>
-      <p class="section__subtitle">Поставляем, интегрируем и обслуживаем роботов. Прозрачные расчёты окупаемости и гарантийная поддержка.</p>
+      <h2 class="section__title">Почему DeloraTech</h2>
+      <p class="section__subtitle">Технологии, сервис и интеграции под ваш объект.</p>
 
       <div class="grid grid--3">
-        <div class="panel">
-          <h3 class="panel__title">Быстрый старт</h3>
-          <p class="panel__text">Пилот за 7–14 дней. Настройка под объект, обучение персонала, старт без сложностей.</p>
+        <div class="card">
+          <div class="icon">
+            <img src="assets/icon-zap.svg" alt="Скорость" />
+          </div>
+          <h3 class="card__title">Быстрый старт</h3>
+          <p class="card__text">Пилот 7–14 дней. Обучение персонала, запуск без сложностей.</p>
         </div>
-        <div class="panel">
-          <h3 class="panel__title">Надёжность</h3>
-          <p class="panel__text">Сервисный центр в Нижнем Новгороде, расширение в Москву и Санкт‑Петербург. Запчасти и регламент ТО.</p>
+
+        <div class="card">
+          <div class="icon">
+            <img src="assets/icon-shield.svg" alt="Надёжность" />
+          </div>
+          <h3 class="card__title">Надёжность</h3>
+          <p class="card__text">Сервисный центр в НН, расширение в МСК/СПБ. Запчасти и регламенты ТО.</p>
         </div>
-        <div class="panel">
-          <h3 class="panel__title">Интеграции</h3>
-          <p class="panel__text">Лифты, турникеты, двери, BMS/SCADA и отчётность — всё под вашим контролем.</p>
+
+        <div class="card">
+          <div class="icon">
+            <img src="assets/icon-cpu.svg" alt="Интеграции" />
+          </div>
+          <h3 class="card__title">Интеграции</h3>
+          <p class="card__text">Лифты, двери, BMS/SCADA, отчёты и уведомления. API для задач.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRODUCTS -->
-  <section id="products" class="section">
+  <!-- Модели -->
+  <section id="models" class="section">
     <div class="container">
-      <h2 class="section__title">Роботы под разные сценарии</h2>
-      <p class="section__subtitle">Торговые центры, склады, бизнес‑центры, ритейл, медицина, образование.</p>
+      <h2 class="section__title">Модели роботов</h2>
+      <p class="section__subtitle">Подбираем под площади, покрытие и график.</p>
 
       <div class="grid grid--3">
-        <div class="panel">
-          <h3 class="panel__title">CC1 / CC1 Pro</h3>
-          <ul class="list">
-            <li>Полностью автономная мойка полов (скраббер/щётки/сушка)</li>
-            <li>Производительность до 1800–3000 м²/ч</li>
-            <li>Автодок‑станция: долив, слив, зарядка</li>
-          </ul>
+        <div class="product">
+          <div class="product__media">IMG</div>
+          <div class="product__body">
+            <h3 class="product__title">CC1 / CC1 Pro</h3>
+            <p class="product__text">Автоматическая мойка полов: скраббер, щётки, сушка.</p>
+            <ul class="list">
+              <li>Производительность до 1800–3000 м²/ч</li>
+              <li>Автодок‑станция: долив/слив/зарядка</li>
+              <li>Интеграции с лифтами/дверями</li>
+            </ul>
+          </div>
         </div>
-        <div class="panel">
-          <h3 class="panel__title">MT1‑VAC</h3>
-          <ul class="list">
-            <li>Промышленный пылесос с умной маршрутизацией</li>
-            <li>Смена насадок под разные поверхности</li>
-            <li>До 6–8 часов работы от одной зарядки</li>
-          </ul>
+
+        <div class="product">
+          <div class="product__media">IMG</div>
+          <div class="product__body">
+            <h3 class="product__title">MT1‑VAC</h3>
+            <p class="product__text">Промышленный пылесос: сухая уборка и проход под мебелью.</p>
+            <ul class="list">
+              <li>Смена насадок под поверхности</li>
+              <li>До 6–8 часов работы</li>
+              <li>Ширина прохода от 60 см</li>
+            </ul>
+          </div>
         </div>
-        <div class="panel">
-          <h3 class="panel__title">MT1‑MAX</h3>
-          <ul class="list">
-            <li>Максимальная автономность для больших площадей</li>
-            <li>LIDAR‑навигация, расширенные датчики</li>
-            <li>Интеграция с BMS / системой доступа</li>
-          </ul>
+
+        <div class="product">
+          <div class="product__media">IMG</div>
+          <div class="product__body">
+            <h3 class="product__title">MT1‑MAX</h3>
+            <p class="product__text">Максимальная автономность и ресурс для больших площадей.</p>
+            <ul class="list">
+              <li>Уборка до 10 000–12 000 м²/сутки</li>
+              <li>LIDAR‑навигация и датчики</li>
+              <li>Интеграция с BMS/SCADA</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TECH -->
-  <section id="tech" class="section">
+  <!-- Отрасли -->
+  <section id="industries" class="section section--alt">
     <div class="container">
-      <h2 class="section__title">Безопасная навигация и умные сценарии</h2>
-      <p class="section__subtitle">Широкий угол обзора RGB‑D, лидары, защитные зоны, расписания и отчёты о качестве уборки.</p>
+      <h2 class="section__title">Где применяем</h2>
+      <p class="section__subtitle">ТЦ и ритейл, склады и логистика, офисы и бизнес‑центры, медицина и образование.</p>
 
-      <div class="grid grid--3">
-        <div class="panel">
-          <h3 class="panel__title">Навигация</h3>
-          <ul class="list">
-            <li>LIDAR + RGB‑D, построение карт</li>
-            <li>Обход препятствий и безопасные зоны</li>
-            <li>Точные маршруты и расписания</li>
-          </ul>
-        </div>
-        <div class="panel">
-          <h3 class="panel__title">Интеграции</h3>
-          <ul class="list">
-            <li>Лифты, турникеты, двери</li>
-            <li>BMS/SCADA и отчётность</li>
-            <li>API для задач и расписаний</li>
-          </ul>
-        </div>
-        <div class="panel">
-          <h3 class="panel__title">Сервис</h3>
-          <ul class="list">
-            <li>Обучение персонала и регламенты</li>
-            <li>ТО, расходники, быстрые ремонты</li>
-            <li>SLA и удалённая поддержка</li>
-          </ul>
-        </div>
+      <div class="chips">
+        <span class="chip">Торговые центры</span>
+        <span class="chip">Склады</span>
+        <span class="chip">Офисы</span>
+        <span class="chip">Гостиницы</span>
+        <span class="chip">Медицина</span>
+        <span class="chip">Образование</span>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- Контакты -->
   <section id="contact" class="section">
     <div class="container">
       <h2 class="section__title">Запрос демо и расчёт окупаемости</h2>
-      <p class="section__subtitle">Оставьте контакты — подберём модель под ваш объект и пришлём расчёт.</p>
+      <p class="section__subtitle">Оставьте контакты — подберём модель под ваш объект.</p>
 
       <form class="form" onsubmit="event.preventDefault(); alert('Заявка отправлена. Мы свяжемся с вами.');">
         <div class="grid grid--2">
@@ -150,24 +165,32 @@
           <input class="input grid__full" type="email" placeholder="Email (необязательно)" />
           <textarea class="input grid__full" rows="4" placeholder="Кратко опишите объект (площадь, покрытие, график)"></textarea>
         </div>
-        <button class="btn btn--primary" type="submit">Отправить заявку</button>
+        <div class="form__actions">
+          <button class="btn btn--primary" type="submit">Отправить заявку</button>
+          <a class="btn btn--ghost" href="mailto:info@deloratech.ru">Написать на почту</a>
+        </div>
+        <p class="policy">Нажимая «Отправить», вы соглашаетесь с обработкой персональных данных.</p>
       </form>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Футер -->
   <footer class="footer">
     <div class="container footer__row">
       <div class="brand">
-        <div class="brand__logo brand__logo--sm"></div>
-        <div class="brand__name brand__name--muted">© 2025 DeloraTech. Все права защищены.</div>
+        <span class="brand__logo brand__logo--sm"></span>
+        <span class="brand__muted">© <span id="year"></span> DeloraTech</span>
       </div>
-      <div class="footer__links">
+      <nav class="footer__links">
         <a href="#">Политика конфиденциальности</a>
         <a href="#">Договор оферты</a>
         <a href="#contact">Контакты</a>
-      </div>
+      </nav>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
