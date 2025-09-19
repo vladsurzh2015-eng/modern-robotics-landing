@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DeloraTech</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Шрифты -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Evolventa&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeloraTech — автономные роботы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Roboto (заголовки) + Evolventa (текст) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600;700;800&family=Evolventa:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <h1>Автономные роботы<br>для клининга и сервиса</h1>
-    <p class="subtitle">Инновационные технологии будущего уже сегодня</p>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">DeloraTech</div>
+      <nav class="menu">
+        <a href="#solutions">Решения</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Наши решения</h2>
-      <p>Мы предлагаем передовые роботизированные системы, которые помогают бизнесу автоматизировать клининг и сервисные процессы.</p>
+  <!-- HERO (тёмный фон, светлый заголовок с подсветкой) -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="glow">Автономные роботы<br/>для клининга и сервиса</h1>
+      <p class="lead">Инновационные технологии будущего уже сегодня</p>
+      <div class="cta">
+        <a href="#contact" class="btn">Оставить заявку</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Светлый блок с тёмным текстом -->
+  <main class="content">
+    <section id="solutions" class="section">
+      <div class="container">
+        <h2>Наши решения</h2>
+        <p>Мы предлагаем передовые роботизированные системы, которые помогают бизнесу
+           автоматизировать клининговые и сервисные процессы. Интеграции с лифтами и
+           системами доступа, карты помещений, расписания и отчёты — всё под контролем.</p>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> DeloraTech</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
